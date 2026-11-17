@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kazi Nazim — Visual Designer</title>
+  <meta name="description" content="Kazi Nazim is a visual designer from Dhaka creating posters, brand identities, logos and social media content." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Body fonts. The display font (Gondens DEMO) is self-hosted, see css/styles.css. -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href="assets/fonts/league-gothic-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="navbar__inner">
+      <a class="logo" href="#home" aria-label="Kazi Nazim — home">
+        <img class="logo__circle" src="assets/icons/logo-circle.svg" width="59" height="59" alt="" />
+        <span class="logo__mark" aria-hidden="true"><span class="logo__k">K</span><span class="logo__n">N</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="site-nav" aria-label="Primary">
+        <ul class="navbar__links">
+          <li><a class="nav-link is-active" href="#home" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="works.html">Works</a></li>
+        </ul>
+        <a class="btn btn--outline navbar__cta-mobile" href="contact.html">
+          Let’s Talk
+          <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+        </a>
+      </nav>
+
+      <a class="btn btn--outline navbar__cta" href="contact.html">
+        Let’s Talk
+        <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+      </a>
+
+      <button class="navbar__toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__stage">
+        <img class="hero__ellipse" src="assets/icons/hero-ellipse.svg" width="1241" height="1241" alt="" />
+        <div class="texture texture--hero" aria-hidden="true"></div>
+
+        <p class="hero__intro">Hi, I am Nazim, I am a</p>
+        <h1 class="hero__title display" id="hero-title" data-text="VISUAL DESIGNER" data-letters>VISUAL DESIGNER</h1>
+        <p class="hero__tagline">with passion to design<br />something amazing</p>
+
+        <div class="hero__tool hero__tool--ps">
+          <img src="assets/images/hero-photoshop.png" alt="Adobe Photoshop" width="254" height="254" />
+        </div>
+        <div class="hero__tool hero__tool--ai">
+          <img src="assets/images/hero-illustrator.png" alt="Adobe Illustrator" width="110" height="110" />
+        </div>
+        <div class="hero__tool hero__tool--canva">
+          <img src="assets/images/hero-canva.png" alt="Canva" width="116" height="116" />
+        </div>
+
+        <div class="hero__portrait">
+          <img src="assets/images/hero-portrait.png" alt="Illustrated portrait of Nazim wearing glasses, working on a laptop" width="825" height="880" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS TICKER ============ -->
+    <div class="ticker" aria-label="Services">
+      <div class="ticker__band">
+        <ul class="ticker__track">
+          <li class="ticker__item">Poster Design</li>
+          <li class="ticker__item">Poster Design</li>
+          <li class="ticker__item">Poster Design</li>
+          <li class="ticker__item">Social Media Post Design</li>
+          <li class="ticker__item">Logo Design</li>
+          <li class="ticker__item">Brand Design</li>
+          <li class="ticker__item">Banner Design</li>
+          <li class="ticker__item">Poster Design</li>
+          <li class="ticker__item">Poster Design</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__container">
+        <div class="about__image">
+          <img src="assets/images/about-portrait.png" alt="Illustration of Nazim walking down a sunny street" width="395" height="592" loading="lazy" />
+        </div>
+        <div class="about__content">
+          <div class="about__text">
+            <h2 class="section-title display display--red" id="about-title" data-text="About Me">About Me</h2>
+            <p class="about__body">I'm Nazim, a visual designer from Dhaka with over six years of turning ideas into bold, memorable visuals. I design posters, brand identities, logos and social media content for startups, agencies and creators. My style mixes retro print textures with clean, modern layouts, and every project starts with the story you want to tell.</p>
+          </div>
+          <a class="btn btn--red" href="about.html">
+            More
+            <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MY WORKS + MY CLIENTS ============ -->
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="works__container">
+        <h2 class="section-title display display--red" id="works-title" data-text="Discover My Works">Discover My Works</h2>
+
+        <ul class="works__grid">
+          <li>
+            <article class="project-card">
+              <div class="project-card__media">
+                <img class="project-card__img project-card__img--summer" src="assets/images/work-summer-premiere.jpg" alt="Retro-striped poster of a blindfolded woman with a stars-and-stripes headband" width="736" height="1096" loading="lazy" />
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__text">
+                  <h3 class="project-card__title">Summer Premiere Poster</h3>
+                  <p class="project-card__desc">Key art for a streaming launch</p>
+                </div>
+                <a class="btn-icon" href="work.html?p=summer-premiere" aria-label="View Summer Premiere Poster">
+                  <img src="assets/icons/arrow-right-dark.svg" width="24" height="24" alt="" />
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <div class="project-card__media">
+                <img class="project-card__img" src="assets/images/work-life-on-mars.jpg" alt="Poster of an astronaut sitting in an armchair in front of a red planet" width="736" height="920" loading="lazy" />
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__text">
+                  <h3 class="project-card__title">My Life on Mars</h3>
+                  <p class="project-card__desc">Illustrated film poster</p>
+                </div>
+                <a class="btn-icon" href="work.html?p=life-on-mars" aria-label="View My Life on Mars">
+                  <img src="assets/icons/arrow-right-dark.svg" width="24" height="24" alt="" />
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card project-card--lg">
+              <div class="project-card__media">
+                <img class="project-card__img" src="assets/images/work-dark-knight.jpg" alt="Halftone fan poster of Batman with the quote “The night is darkest before dawn”" width="736" height="1104" loading="lazy" />
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__text">
+                  <h3 class="project-card__title">The Dark Knight Tribute</h3>
+                  <p class="project-card__desc">Fan poster, halftone style</p>
+                </div>
+                <a class="btn-icon" href="work.html?p=dark-knight-tribute" aria-label="View The Dark Knight Tribute">
+                  <img src="assets/icons/arrow-right-dark.svg" width="24" height="24" alt="" />
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card project-card--lg">
+              <div class="project-card__media">
+                <img class="project-card__img" src="assets/images/work-character-collage.jpg" alt="Black-and-white editorial collage of a character with red-framed film stills" width="736" height="920" loading="lazy" />
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__text">
+                  <h3 class="project-card__title">Character Collage Series</h3>
+                  <p class="project-card__desc">Editorial poster design</p>
+                </div>
+                <a class="btn-icon" href="work.html?p=character-collage" aria-label="View Character Collage Series">
+                  <img src="assets/icons/arrow-right-dark.svg" width="24" height="24" alt="" />
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <a class="btn btn--red works__more" href="works.html">
+          More
+          <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+        </a>
+      </div>
+
+      <!-- My Clients card straddles the Works and Testimonials sections -->
+      <div class="clients" id="clients" aria-labelledby="clients-title">
+        <h2 class="section-title display display--dark clients__title" id="clients-title" data-text="My Clients">My Clients</h2>
+        <ul class="clients__list">
+          <li class="client-row">
+            <div class="client-row__text">
+              <h3 class="client-row__name">Teamwork.inc</h3>
+              <p class="client-row__date"><time datetime="2025-01-12">Jan 12, 2025</time></p>
+            </div>
+            <div class="client-row__right">
+              <span class="client-row__logo client-row__logo--teamwork"><img src="assets/icons/logo-teamwork.svg" width="178" height="24" alt="Teamwork" loading="lazy" /></span>
+              <a class="btn-round" href="#clients" aria-label="View work for Teamwork.inc">
+                <img src="assets/icons/arrow-up-right-white-24.svg" width="24" height="24" alt="" />
+              </a>
+            </div>
+          </li>
+          <li class="client-row">
+            <div class="client-row__text">
+              <h3 class="client-row__name">Django</h3>
+              <p class="client-row__date"><time datetime="2024-09-03">Sep 3, 2024</time></p>
+            </div>
+            <div class="client-row__right">
+              <span class="client-row__logo"><img src="assets/icons/logo-django.svg" width="90" height="36" alt="Django" loading="lazy" /></span>
+              <a class="btn-round" href="#clients" aria-label="View work for Django">
+                <img src="assets/icons/arrow-up-right-white-24.svg" width="24" height="24" alt="" />
+              </a>
+            </div>
+          </li>
+          <li class="client-row">
+            <div class="client-row__text">
+              <h3 class="client-row__name">Pipefy.io</h3>
+              <p class="client-row__date"><time datetime="2024-04-18">Apr 18, 2024</time></p>
+            </div>
+            <div class="client-row__right">
+              <span class="client-row__logo"><img src="assets/icons/logo-pipefy.svg" width="90" height="36" alt="Pipefy" loading="lazy" /></span>
+              <a class="btn-round" href="#clients" aria-label="View work for Pipefy.io">
+                <img src="assets/icons/arrow-up-right-white-24.svg" width="24" height="24" alt="" />
+              </a>
+            </div>
+          </li>
+          <li class="client-row">
+            <div class="client-row__text">
+              <h3 class="client-row__name">Rackspace</h3>
+              <p class="client-row__date"><time datetime="2023-11-27">Nov 27, 2023</time></p>
+            </div>
+            <div class="client-row__right">
+              <span class="client-row__logo"><img src="assets/icons/logo-rackspace.svg" width="156" height="48" alt="Rackspace" loading="lazy" /></span>
+              <a class="btn-round" href="#clients" aria-label="View work for Rackspace">
+                <img src="assets/icons/arrow-up-right-white-24.svg" width="24" height="24" alt="" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="testimonials__container">
+        <div class="testimonials__aside">
+          <h2 class="testimonials__title display display--red" id="testimonials-title" data-text="What’s My Clients Says"><span class="line">What’s</span> <span class="line">My</span> <span class="line">Clients</span> <span class="line">Says</span></h2>
+          <div class="testimonials__controls">
+            <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous testimonial" data-carousel-prev>
+              <svg class="carousel-btn__icon" width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true" focusable="false"><circle class="carousel-btn__circle" cx="40" cy="40" r="33.333"/><path class="carousel-btn__arrow" d="M40 53.3333L53.3333 40L40 26.6667M26.666 40H53.3327" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel-btn" type="button" aria-label="Next testimonial" data-carousel-next>
+              <svg class="carousel-btn__icon" width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true" focusable="false"><circle class="carousel-btn__circle" cx="40" cy="40" r="33.333"/><path class="carousel-btn__arrow" d="M40 53.3333L53.3333 40L40 26.6667M26.666 40H53.3327" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- To add a testimonial, copy one <li class="testimonial"> block. -->
+        <ul class="testimonials__list" data-carousel aria-live="polite">
+          <li class="testimonial testimonial--lilac">
+            <blockquote class="testimonial__quote">"Nazim rebuilt our whole brand, from the logo to the cup sleeves. He listened closely, brought ideas we hadn't thought of, and delivered every file on time. Our customers love the new packaging."</blockquote>
+            <div class="testimonial__client">
+              <div class="testimonial__person">
+                <img class="testimonial__avatar testimonial__avatar--bg" src="assets/images/avatar-arif.png" width="64" height="64" alt="" loading="lazy" />
+                <div>
+                  <p class="testimonial__name">Arif Rahman</p>
+                  <p class="testimonial__role">Founder of Brewline Coffee</p>
+                </div>
+              </div>
+              <p class="testimonial__brand">brewline.</p>
+            </div>
+          </li>
+          <li class="testimonial testimonial--mint">
+            <blockquote class="testimonial__quote">"We hired Nazim for one month of social media posts and kept him for a year. His designs are bold, always on brand, and ready before the deadline. Engagement on our campaign posts nearly doubled."</blockquote>
+            <div class="testimonial__client">
+              <div class="testimonial__person">
+                <img class="testimonial__avatar" src="assets/images/avatar-sarah.png" width="64" height="64" alt="" loading="lazy" />
+                <div>
+                  <p class="testimonial__name">Sarah Lindqvist</p>
+                  <p class="testimonial__role">Marketing Lead at Northpeak</p>
+                </div>
+              </div>
+              <p class="testimonial__brand">northpeak</p>
+            </div>
+          </li>
+          <li class="testimonial testimonial--yellow">
+            <blockquote class="testimonial__quote">"Our book covers finally look like they belong on the same shelf. Nazim built a cover system we can reuse for every new title, and the first series sold out its launch print run."</blockquote>
+            <div class="testimonial__client">
+              <div class="testimonial__person">
+                <img class="testimonial__avatar" src="assets/images/avatar-nadia.png" width="64" height="64" alt="" loading="lazy" />
+                <div>
+                  <p class="testimonial__name">Nadia Karim</p>
+                  <p class="testimonial__role">Creative Director at Lumen Books</p>
+                </div>
+              </div>
+              <p class="testimonial__brand">lumen</p>
+            </div>
+          </li>
+          <li class="testimonial testimonial--sand">
+            <blockquote class="testimonial__quote">"Nazim designed our festival posters, banners and tickets in just three weeks. Everything felt like one loud, fun identity, and people kept taking photos with the posters all weekend."</blockquote>
+            <div class="testimonial__client">
+              <div class="testimonial__person">
+                <img class="testimonial__avatar" src="assets/images/avatar-tanvir.png" width="64" height="64" alt="" loading="lazy" />
+                <div>
+                  <p class="testimonial__name">Tanvir Hasan</p>
+                  <p class="testimonial__role">Event Director at Riverside Fest</p>
+                </div>
+              </div>
+              <p class="testimonial__brand">riverside</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="texture" aria-hidden="true"></div>
+      <div class="cta__inner">
+        <h2 class="cta__title display display--dark" id="cta-title" data-text="Want to create something awesome ?">Want to create something awesome ?</h2>
+        <a class="btn btn--dark" href="contact.html">
+          Let’s Talk
+          <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__contact">
+      <p class="footer__eyebrow">HAVE A NICE WORKS? LET’S TALK WITH ME</p>
+      <a class="footer__email" href="mailto:hello@kaziNazim.com">
+        <span class="footer__email-text"><span class="footer__email-muted">hello</span>@kaziNazim.com</span>
+        <span class="footer__email-btn" aria-hidden="true">
+          <img src="assets/icons/arrow-up-right-white-40.svg" width="40" height="40" alt="" />
+        </span>
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__row">
+        <nav aria-label="Footer">
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="YouTube" class="footer__social-yt"><img src="assets/icons/youtube.svg" width="20" height="14" alt="" /></a></li>
+          <li><a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" width="20" height="20" alt="" /></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__row footer__row--end">
+        <form class="newsletter" novalidate>
+          <label class="newsletter__label" for="newsletter-email">Keep up with me if you can</label>
+          <div class="newsletter__field">
+            <input class="newsletter__input" id="newsletter-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" aria-describedby="newsletter-msg" />
+            <button class="newsletter__submit" type="submit" aria-label="Subscribe">
+              <img src="assets/icons/arrow-up-right-footer.svg" width="24" height="24" alt="" />
+            </button>
+          </div>
+          <p class="newsletter__msg" id="newsletter-msg" role="status"></p>
+        </form>
+        <p class="footer__copy">©2023 All Rights Reserved. Designed with 🤍</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

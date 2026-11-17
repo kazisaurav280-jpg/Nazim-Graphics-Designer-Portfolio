@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Summer Premiere Poster — Kazi Nazim, Visual Designer</title>
+  <meta name="description" content="Project details from the portfolio of Kazi Nazim, a visual designer from Dhaka." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Body fonts. The display font (Gondens DEMO) is self-hosted, see css/styles.css. -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href="assets/fonts/league-gothic-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+  <!-- Fills this page from the project list, based on ?p=<slug> -->
+  <script src="js/projects.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="navbar__inner">
+      <a class="logo" href="index.html" aria-label="Kazi Nazim — home">
+        <img class="logo__circle" src="assets/icons/logo-circle.svg" width="59" height="59" alt="" />
+        <span class="logo__mark" aria-hidden="true"><span class="logo__k">K</span><span class="logo__n">N</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="site-nav" aria-label="Primary">
+        <ul class="navbar__links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link is-active" href="works.html">Works</a></li>
+        </ul>
+        <a class="btn btn--outline navbar__cta-mobile" href="contact.html">
+          Let’s Talk
+          <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+        </a>
+      </nav>
+
+      <a class="btn btn--outline navbar__cta" href="contact.html">
+        Let’s Talk
+        <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+      </a>
+
+      <button class="navbar__toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Content below is the Summer Premiere project; js/projects.js swaps in the project named in ?p= -->
+  <main id="main" data-project>
+    <!-- ============ PROJECT HEADER ============ -->
+    <section class="page-head page-head--project" aria-labelledby="project-title">
+      <div class="texture" aria-hidden="true"></div>
+      <div class="project-head">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="works.html">Works</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Work Details</span>
+        </nav>
+        <h1 class="page-head__title display display--dark" id="project-title" data-project-title data-text="Summer Premiere Poster">Summer Premiere Poster</h1>
+        <p class="project-head__lead" data-project-summary>Retro stripes and a bold portrait, made to stop the scroll on launch week.</p>
+      </div>
+    </section>
+
+    <!-- ============ OVERVIEW ============ -->
+    <section class="project-detail" aria-labelledby="overview-title">
+      <div class="project-detail__card">
+        <figure class="project-detail__media">
+          <img data-project-image src="assets/images/work-summer-premiere.jpg" width="736" height="1096" alt="Retro-striped poster of a blindfolded woman with a stars-and-stripes headband" />
+        </figure>
+
+        <div class="project-detail__info">
+          <div class="project-detail__block">
+            <h2 class="project-detail__heading" id="overview-title">Overview</h2>
+            <div class="project-detail__body" data-project-overview>
+              <p>A summer premiere needs one image that works everywhere: a phone thumbnail, a billboard and a social post. The idea was to pair a mysterious portrait with loud retro stripes so the poster reads instantly at any size.</p>
+              <p>The blindfold keeps the story a secret, and the warm, sun-faded palette sets the season before anyone reads a word.</p>
+            </div>
+          </div>
+
+          <!-- The Brief / The Idea / The Outcome -->
+          <div class="project-detail__steps" data-project-steps>
+            <div class="project-detail__block">
+              <h2 class="project-detail__heading">The Brief</h2>
+              <p class="project-detail__text">Create launch key art that feels nostalgic, hints at the plot and stays readable as a tiny thumbnail.</p>
+            </div>
+            <div class="project-detail__block">
+              <h2 class="project-detail__heading">The Idea</h2>
+              <p class="project-detail__text">A blindfolded hero framed by 70s stripes. The mystery comes from what she can’t see, the energy from the pattern.</p>
+            </div>
+            <div class="project-detail__block">
+              <h2 class="project-detail__heading">The Outcome</h2>
+              <p class="project-detail__text">A single master layout that adapts to portrait, square and landscape crops without losing the focal point.</p>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="facts__row">
+              <dt>Client</dt>
+              <dd data-project-client>Streaming launch (concept)</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Year</dt>
+              <dd data-project-year>2023</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Role</dt>
+              <dd data-project-role>Concept, illustration, layout</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Tools</dt>
+              <dd><ul class="tags" data-project-tools><li class="tag">Photoshop</li><li class="tag">Illustrator</li></ul></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__contact">
+      <p class="footer__eyebrow">HAVE A NICE WORKS? LET’S TALK WITH ME</p>
+      <a class="footer__email" href="mailto:hello@kaziNazim.com">
+        <span class="footer__email-text"><span class="footer__email-muted">hello</span>@kaziNazim.com</span>
+        <span class="footer__email-btn" aria-hidden="true">
+          <img src="assets/icons/arrow-up-right-white-40.svg" width="40" height="40" alt="" />
+        </span>
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__row">
+        <nav aria-label="Footer">
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="YouTube" class="footer__social-yt"><img src="assets/icons/youtube.svg" width="20" height="14" alt="" /></a></li>
+          <li><a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" width="20" height="20" alt="" /></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__row footer__row--end">
+        <form class="newsletter" novalidate>
+          <label class="newsletter__label" for="newsletter-email">Keep up with me if you can</label>
+          <div class="newsletter__field">
+            <input class="newsletter__input" id="newsletter-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" aria-describedby="newsletter-msg" />
+            <button class="newsletter__submit" type="submit" aria-label="Subscribe">
+              <img src="assets/icons/arrow-up-right-footer.svg" width="24" height="24" alt="" />
+            </button>
+          </div>
+          <p class="newsletter__msg" id="newsletter-msg" role="status"></p>
+        </form>
+        <p class="footer__copy">©2023 All Rights Reserved. Designed with 🤍</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

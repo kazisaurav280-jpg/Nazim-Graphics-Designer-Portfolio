@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Kazi Nazim, Visual Designer</title>
+  <meta name="description" content="Get in touch with Kazi Nazim about posters, brand identities, logos and social media design." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Body fonts. The display font (Gondens DEMO) is self-hosted, see css/styles.css. -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href="assets/fonts/league-gothic-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="navbar__inner">
+      <a class="logo" href="index.html" aria-label="Kazi Nazim — home">
+        <img class="logo__circle" src="assets/icons/logo-circle.svg" width="59" height="59" alt="" />
+        <span class="logo__mark" aria-hidden="true"><span class="logo__k">K</span><span class="logo__n">N</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="site-nav" aria-label="Primary">
+        <ul class="navbar__links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="works.html">Works</a></li>
+        </ul>
+        <a class="btn btn--outline navbar__cta-mobile" href="contact.html" aria-current="page">
+          Let’s Talk
+          <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+        </a>
+      </nav>
+
+      <a class="btn btn--outline navbar__cta" href="contact.html" aria-current="page">
+        Let’s Talk
+        <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+      </a>
+
+      <button class="navbar__toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-head" aria-labelledby="page-head-title">
+      <div class="texture" aria-hidden="true"></div>
+      <h1 class="page-head__title display display--dark" id="page-head-title" data-text="Contact Me">Contact Me</h1>
+    </section>
+
+    <!-- ============ CONTACT FORM ============
+         Prototype only: the form checks the fields and shows a confirmation,
+         but nothing is sent yet. Hook up a form service in js/main.js
+         (initContactForm) when you're ready. -->
+    <section class="contact" aria-label="Contact form">
+      <div class="contact__card">
+        <form class="contact-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="contact-name">Name*</label>
+            <input class="field__input" id="contact-name" name="name" type="text" placeholder="Hello..." autocomplete="name" required aria-describedby="contact-name-error" />
+            <p class="field__error" id="contact-name-error"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="contact-email">Email*</label>
+            <input class="field__input" id="contact-email" name="email" type="email" placeholder="Where can I reply?" autocomplete="email" required aria-describedby="contact-email-error" />
+            <p class="field__error" id="contact-email-error"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="contact-company">Company Name</label>
+            <input class="field__input" id="contact-company" name="company" type="text" placeholder="Your company or website?" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="contact-message">Message*</label>
+            <textarea class="field__input" id="contact-message" name="message" rows="1" placeholder="I want to build some..." required aria-describedby="contact-message-error"></textarea>
+            <p class="field__error" id="contact-message-error"></p>
+          </div>
+
+          <div class="contact-form__actions">
+            <p class="contact-form__status" role="status"></p>
+            <button class="btn btn--red contact-form__submit" type="submit">
+              Submit
+              <img src="assets/icons/arrow-right-white.svg" width="20" height="20" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__contact">
+      <p class="footer__eyebrow">HAVE A NICE WORKS? LET’S TALK WITH ME</p>
+      <a class="footer__email" href="mailto:hello@kaziNazim.com">
+        <span class="footer__email-text"><span class="footer__email-muted">hello</span>@kaziNazim.com</span>
+        <span class="footer__email-btn" aria-hidden="true">
+          <img src="assets/icons/arrow-up-right-white-40.svg" width="40" height="40" alt="" />
+        </span>
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__row">
+        <nav aria-label="Footer">
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Work</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="YouTube" class="footer__social-yt"><img src="assets/icons/youtube.svg" width="20" height="14" alt="" /></a></li>
+          <li><a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" width="20" height="20" alt="" /></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" width="20" height="20" alt="" /></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__row footer__row--end">
+        <form class="newsletter" novalidate>
+          <label class="newsletter__label" for="newsletter-email">Keep up with me if you can</label>
+          <div class="newsletter__field">
+            <input class="newsletter__input" id="newsletter-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" aria-describedby="newsletter-msg" />
+            <button class="newsletter__submit" type="submit" aria-label="Subscribe">
+              <img src="assets/icons/arrow-up-right-footer.svg" width="24" height="24" alt="" />
+            </button>
+          </div>
+          <p class="newsletter__msg" id="newsletter-msg" role="status"></p>
+        </form>
+        <p class="footer__copy">©2023 All Rights Reserved. Designed with 🤍</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
